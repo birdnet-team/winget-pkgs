@@ -1,0 +1,23 @@
+# Created with WinGet Releaser using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BirdNETTeam.BirdNETLive
+PackageVersion: 0.18.3
+InstallerLocale: en-US
+InstallerType: inno
+Scope: machine
+InstallerSwitches:
+  Custom: /ALLUSERS
+ProductCode: '{A26F9469-032F-48BB-949C-7C7087CFAE87}_is1'
+ReleaseDate: 2026-07-02
+AppsAndFeaturesEntries:
+- ProductCode: '{A26F9469-032F-48BB-949C-7C7087CFAE87}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\BirdNET Live'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/birdnet-team/birdnet-live-app/releases/download/v0.18.3/BirdNET_Live_v0.18.3_windows_x64_setup.exe
+  InstallerSha256: FD25F6BBB5F48EEA4055D568CE242FF8B4BA1E69EBCC35B0D3F96596958EB02A
+ManifestType: installer
+ManifestVersion: 1.12.0
